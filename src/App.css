@@ -1,0 +1,241 @@
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay .btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f8f9fa;
+  color: black;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.overlay .btn:hover {
+  background-color: #e2e6ea;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+#particles-js {
+  background-color: black;
+  height: 100vh; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; 
+  overflow:scroll;
+}
+#button{
+  color: white;
+}
+#button:hover{
+     background-color: white;
+     color:black;
+}
+#button2{
+  color: white;
+}
+#button2:hover{
+     background-color: white;
+     color:black;
+}
+@keyframes homes {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#home {
+  animation-name: homes;
+  animation-duration: 1s;
+  animation-timing-function: ease; 
+}
+@keyframes bar {
+  0% {
+    transform: translatey(300%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+#bars {
+  animation-name: bar;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease; 
+}
+@keyframes navbar {
+  0% {
+    transform: translatey(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+#nav {
+  animation-name:navbar;
+  animation-duration: 1s;
+  animation-timing-function: ease; 
+}
+@keyframes ides {
+  0% {
+    transform: translatex(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+#abt {
+  animation-name:ides;
+  animation-duration: 0.7s;
+  animation-timing-function: ease; 
+}
+
+
+@keyframes dev {
+  0% {
+    transform: translatey(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+#stack {
+  animation-name:dev;
+  animation-duration: 0.7s;
+  animation-timing-function: ease; 
+}
+
+
+
+
+@keyframes pra {
+  0% {
+    transform: translatex(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+#pr {
+  animation-name:pra;
+  animation-duration: 0.7s;
+  animation-timing-function: ease; 
+}
+
+
+@keyframes pravin {
+  0% {
+    transform: translatey(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+#in {
+  animation-name:pravin;
+  animation-duration: 0.7s;
+  animation-timing-function: ease; 
+}
+
+
+@keyframes avi{
+  0% {
+    transform: translatey(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+#av {
+  animation-name:avi;
+  animation-duration: 0.7s;
+  animation-timing-function: ease; 
+}
+
+.rounded-image {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+#out {
+  animation-name:outing;
+  animation-duration: 0.7s;
+  animation-timing-function: ease; 
+}
+
+
+@keyframes outing{
+  0% {
+    transform: translatey(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+#pr {
+  animation-name:prs;
+  animation-duration: 0.7s;
+  animation-timing-function: ease; 
+}
+
+
+@keyframes prs{
+  0% {
+    transform: translatey(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
