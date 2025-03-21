@@ -1,7 +1,7 @@
 particlesJS('particles-js', {
   "particles": {
     "number": {
-      "value": 400, // Increase the number of particles for a denser web
+      "value": 300, // Increase the number of particles for a denser web
       "density": {
         "enable": true,
         "value_area": 1000 // Increase the density area for more particles
@@ -94,7 +94,7 @@ particlesJS('particles-js', {
         "speed": 3
       },
       "repulse": {
-        "distance": 100
+        "distance": 150
       },
       "push": {
         "particles_nb": 4

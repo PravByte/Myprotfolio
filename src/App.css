@@ -175,7 +175,7 @@ body {
   }
 }
 
-#in {
+.in {
   animation-name:pravin;
   animation-duration: 0.7s;
   animation-timing-function: ease; 
@@ -230,6 +230,31 @@ body {
 
 
 @keyframes prs{
+  0% {
+    transform: translatey(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+.cons {
+  animation-name:ou;
+  animation-duration: 0.7s;
+  animation-timing-function: ease; 
+}
+
+
+@keyframes ou{
   0% {
     transform: translatey(-100%);
     opacity: 0;

@@ -1,26 +1,79 @@
 import React from 'react'
-
+import html from '../src/assets/html-5.png'
+import css from '../src/assets/css-3 (1).png'
+import bootstrap from '../src/assets/bootstrap.png'
+import tailwind from '../src/assets/512px-Tailwind_CSS_Logo.svg.png'
+import javascript from '../src/assets/java-script (1).png'
+import reactjs from '../src/assets/atom.png'
+import java from '../src/assets/java.png'
+import sql from '../src/assets/database.png'
+import github from '../src/assets/github.png'
 const Skills = () => {
   return (
     <div>
       <div className="container mt-5" style={{ fontFamily: 'cursive' }}>
-        <div className="row">
-          <p  style={{ fontWeight: 'light', fontSize: '35px' }} className='text-warning '>Skills</p>
-          <div id='pr' className="col-12 col-lg-6">
-            <p style={{ fontWeight: 'light', fontSize: '25px' }} className='text-danger'>Programming Languages</p>
-            <h3>Java</h3>
-            <p style={{ textAlign: 'justify' }}>Proficient in Java with a strong understanding of object-oriented programming (OOP). Experienced in building Java applications, including working with core libraries and concepts such as classes, inheritance, and exception handling. Familiar with database interaction and API integration to create efficient, scalable solutions. Continuously enhancing my skills to deliver high-quality software. </p>
-            <h3>Java Script</h3>
-            <p style={{ textAlign: 'justify' }}>Proficient in JavaScript with a strong understanding of the Document Object Model (DOM) and event handling. Experienced in building interactive web applications using HTML, CSS, and JavaScript. Familiar with API integration and modern JavaScript features like ES6. </p>
-          
+
+        <p style={{ fontWeight: 'light', fontSize: '35px' }} className='text-warning text-center'>Skills</p>
+        <div className="container cons">
+
+          <div className="row text-center text-dark">
+            <div className='col-6 col-md-3 col-lg-3'>
+              <img style={{ width: '70px', height: '70px', margin: '10px', }} src={html} alt="HTML" />
+              <h2 style={{ fontFamily: 'cursive' }}>Html</h2>
+            </div>
+            <div className="col-6  col-md-3 col-lg-3">
+              <img style={{ width: '70px', height: '70px', margin: '10px' }} src={css} alt="CSS" />
+              <h2 style={{ fontFamily: 'cursive' }}>Css</h2>
+            </div>
+            <div className="col-6  col-md-3 col-lg-3">
+              <img style={{ width: '70px', height: '70px', margin: '10px' }} src={bootstrap} alt="Bootstrap" />
+              <h2 style={{ fontFamily: 'cursive' }}>Boot Strap</h2>
+
+            </div>
+
+            <div className="col-6  col-md-3 col-lg-3">
+              <img style={{ width: '70px', height: '70px', margin: '10px' }} src={tailwind} alt="tailwind" />
+              <h2 style={{ fontFamily: 'cursive' }}>Tailwind css</h2>
+            </div>
           </div>
-          <div id='av' className="col-12 col-lg-6">
-            <h3 >React.js Developer:</h3>
-            <p style={{textAlign:'justify'}}>Proficient in JavaScript with a strong understanding of the Document Object Model (DOM) and event handling. Experienced in building interactive web applications using HTML, CSS, and JavaScript. Familiar with API integration and modern JavaScript features like ES6. Continuously learning to enhance user experiences and optimize performance.</p>
-            <h3 className='text-danger mt-3'>Database Management</h3>
-            <h3>Sql</h3>
-            <p style={{ textAlign: 'justify' }}>Proficient in SQL with a strong understanding of database design and query optimization. Experienced in writing complex queries, joins, and subqueries in SQL*Plus. Familiar with database management, data manipulation, and ensuring data integrity.</p>
+
+          <div className="row text-center mt-5 text-dark">
+            <div className="col-6 col-md-3 col-lg-3">
+
+              <img style={{ width: '70px', height: '70px', margin: '10px' }} src={javascript} alt="JavaScript" />
+              <h2 style={{ fontFamily: 'cursive' }}>Java script</h2>
+            </div>
+            <div className="col-6 col-md-3 col-lg-3">
+              <img style={{ width: '70px', height: '70px', margin: '10px' }} src={reactjs} alt="React" />
+              <h2 style={{ fontFamily: 'cursive' }}>React js</h2>
+            </div>
+            <div className="col-6 col-md-3 col-lg-3">
+              <img style={{ width: '70px', height: '70px', margin: '10px' }} src={java} alt="Java" />
+              <h2 style={{ fontFamily: 'cursive' }}>Java</h2>
+            </div>
+            <div className="col-6 col-md-3 col-lg-3">
+              <img style={{ width: '70px', height: '70px', margin: '10px' }} src={sql} alt="SQL" />
+              <h2 style={{ fontFamily: 'cursive' }}>Sql</h2>
+            </div>
+
           </div>
+
+
+          <div className="container ">
+            <div className="row text-center text-dark">
+              <div className="col-6  col-md-3 col-lg-3  ">
+                <img style={{ width: '70px', height: '70px', margin: '10px' }} src={github} alt="GitHub" />
+                <h2 style={{ fontFamily: 'cursive' }}>Github</h2>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
         </div>
       </div>
     </div>

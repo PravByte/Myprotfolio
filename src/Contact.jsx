@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
+  let navigate = useNavigate()
   const [state, setState] = useState({
     name: '',
     email: '',
@@ -46,7 +48,7 @@ const Contact = () => {
     if (valid) {
       setSubmit([...submit, state]);
       console.log(state); 
-        // Reset the form fields
+       
         setState({
           name: '',
           email: '',
@@ -86,7 +88,7 @@ const Contact = () => {
                   name="name"
                   value={state.name}
                 />
-                {errors.name && <div className="text-danger">{errors.name}</div>} {/* Error below the name input */}
+                {errors.name && <div className="text-danger">{errors.name}</div>}
               </div>
               <div className="mb-3">
                 <label htmlFor="email" className="form-label">Email</label>
@@ -98,7 +100,7 @@ const Contact = () => {
                   name="email"
                   value={state.email}
                 />
-                {errors.email && <div className="text-danger">{errors.email}</div>} {/* Error below the email input */}
+                {errors.email && <div className="text-danger">{errors.email}</div>} 
               </div>
               <div className="mb-3">
                 <label htmlFor="message" className="form-label">Message:</label>
@@ -110,13 +112,14 @@ const Contact = () => {
                   value={state.message}
                   rows="4"
                 ></textarea>
-                {errors.message && <div className="text-danger">{errors.message}</div>} {/* Error below the message input */}
+                {errors.message && <div className="text-danger">{errors.message}</div>} 
               </div>
               <div className="mb-3">
                 <button type="submit" className='btn btn-primary rounded-3'>Send Message</button>
               </div>
             </form>
-
+            
+                  <button onClick={()=>navigate('/')} className='btn btn-success mt-3'><i class="fa-solid fa-house"></i> Home</button>
           </div>
         </div>
       </div>
