@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import resume from '../src/assets/pravinresumew.pdf'
 
 const Home = () => {
   let navigate = useNavigate()
@@ -68,7 +68,7 @@ const Home = () => {
             >   
               Contact me
             </button>
-            <a href="../src/REFUMEF.pdf">
+            <a href={resume}>
               <button 
                 id='button2' 
                 style={{ border: '1px solid white', width: '200px' }} 
